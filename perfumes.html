@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Marrakech Parfums Bab Rizk</title>
+
+<link href="https://fonts.googleapis.com/css?family=Playfair Display|Montserrat|Parisienne|Italianno" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"/>
+<link
+  rel="stylesheet"
+  href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+  crossorigin="anonymous"
+/> 
+<link rel="stylesheet" href="https://unpkg.com/lucide@latest">
+   
+<style>
+ *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+    body{
+        margin: 0px;
+    }
+    #nav{
+      background-color: #2d2d2d;
+      margin: 0px;
+      width:100%;
+     
+  }
+  #nav h3{
+     font-family: "parisienne";
+     color: #e6cfa3;
+     font-size: 20px;
+     font-style: italic;
+     font-weight: 450;
+     margin-left: 10px;
+     padding-top: 10px;
+  }
+  #navbar{
+    background-color: #2d2d2d ;
+  
+  }
+  .navbar-nav a{
+      color: #e6cfa3;
+      font-family: "parisienne";
+  }
+  .navbar-toggler-icon{
+      color: #e6cfa3 ;
+     
+}
+.navbar-toggler{
+     margin: 0px;
+     padding: 0px;
+     
+}  
+svg{
+    stroke-width: 1.2;
+    width: 20px;
+    color: #e6cfa3;
+}
+.swiper-pagination-bullet{
+  width: 40px;
+  height: 4px;
+  border-radius: 2px;
+background: #ffffff80;
+margin: 0 6px !important;
+transition: all 0.4s ease;
+}
+.swiper-pagination-bullet-active{
+    height: 6px;
+    background: antiquewhite;
+}
+.swiper-slide-active img{
+    width:100%;
+    height:500px;
+    object-fit:cover;
+    animation: zoomOut 5s linear;
+}
+
+@keyframes zoomOut{
+  0%{
+    transform: scale(1.15);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+.swiper-slide img{
+    height: 500px;
+  
+    overflow: hidden;
+    object-fit:cover;
+   
+}
+.nav2{
+    position: sticky;
+    width: 100%;
+    display: flex;
+
+}
+.article h3{
+    font-size: 20px;
+}
+.article h2{
+    font-size: 15px;
+    text-decoration: #e79396 underline;
+}
+.articles{
+    
+    margin-top: 5px;
+    grid-template-columns: repeat( 2, 1fr);
+    display: grid;
+    background: #fdf1f2;
+    gap: 10px;
+    
+}
+.article{
+    height: 300px;
+    width: 180px;
+    font-family: "Montserrat";
+    font-weight: 1000;
+    margin-left: 5px; 
+    border-radius: 10px;
+    margin-top: 10px;
+    position: relative;
+}
+.article img{
+    height: 170px;
+    width: 150px;
+  
+    
+}
+.btn{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgb(0, 0, 0);
+  
+  width: 40px;  
+  height: 40px;  
+  border-radius: 50%;
+  padding: 5px;
+}
+.bn{
+    color: transparent;
+    border: transparent;
+    outline: transparent;
+}
+html{
+    scroll-behavior: smooth;
+}
+   </style>
+   </head>
+    <body>
+    <nav class="navbar navbar-expand-lg " id="nav">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+            <a class="navbar-toggler-icon"> <i data-lucide="menu"></i> </a>
+        </button>
+          <h3> Marrakech Parfums </h3>
+         
+            
+           
+            
+                  
+         <a href="cart.html"  style=" color: #2d2d2d;  "> <i data-lucide="store"></i></a>
+         
+        <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" id="Home" href="index.html">Home / الصفحة الرئيسية  </a></li>
+                <li class="nav-item"><a class="nav-link" id="jewelery" style="color: #e6cfa3; text-decoration: #e6cfa3 underline;" href="perfumes.html"> Perfumes / العطور </a></li>
+                <li class="nav-item"><a class="nav-link" id="jewelery" href="deo.html"> Deodorants / مزيلات العرق </a></li>
+                <li class="nav-item"><a class="nav-link" id="jewelery" href="Air.html"> AirFresheners / معطرات الجو </a></li>
+                <li class="nav-item"><a class="nav-link" id="jewelery" href="musk.html"> Musks / الامساك </a></li>
+
+           </ul>
+        </div>
+    </nav>
+       <nav class="nav2"> <a href="#bottom"><button style="width: 187px; background-color: #2d2d2d; outline: #2d2d2d;"> <i data-lucide="mars" ></i> </button></a> 
+      <a href="#top"> <button  style="width: 187px;  background-color: #2d2d2d; outline: #2d2d2d; "> <i data-lucide="venus" ></i> </button></a> 
+    </nav>
+      
+      
+      <div class="swiper hero-slider">
+        <div class="swiper-wrapper">
+      
+          
+      
+          <div class="swiper-slide">
+            <img src="bb.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="rarepearls139.jpeg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="bbb.jpg" alt="">
+          </div>
+      
+          <div class="swiper-slide">
+            <img src="bbbb.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="bbbbb.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="bbbbbb.jpg" alt="">
+          </div>
+        </div>
+      
+        <div class="swiper-pagination"></div>
+      </div>
+          <h2 style="font-family: 'parisienne'; margin-left: 20px; margin-top: 10px;"> Our Perfume Section:  </h2>
+            <h3 id="top" style="font-family: 'parisienne'; margin-left: 50px;"> Women perfumes: </h3>
+     <div  class="articles" data-gender="women">
+          <div class="article">
+           <img src="allornothing.jpg" alt="">
+            <h3> All Or Nothing Black Perfume </h3>
+            <h4> Prix : 299dh </h4>
+            <a href="http://wa.me/212652995806" target="_blank" rel="noopener noreferrer"> <button class="bn">
+                <span class="btn"><i data-lucide="handbag"></i></span> 
+               </button></a>
+        </div>
+        <div class="article">
+            <img src="Allornothingpink299.jpeg" alt="">
+             <h3> All Or Nothing pink Perfume </h3>
+             <h4> Prix : 299dh </h4>
+             <a href="http://wa.me/212652995806" target="_blank" rel="noopener noreferrer"> <button class="bn">
+                <span class="btn"><i data-lucide="handbag"></i></span> 
+               </button></a>
+         </div>
+         <div class="article">
+            <img src="allornothingperfume+amlifiedcream319.jpeg" alt="">
+             <h3> All Or Nothing pink Perfume + Amplified Cream </h3>
+             <h4> Prix : 319dh </h4>
+             <a href="http://wa.me/212652995806" target="_blank" rel="noopener noreferrer"> <button class="bn">
+                <span class="btn"><i data-lucide="handbag"></i></span> 
+               </button></a>
+         </div>
+         <div class="article">
+            <img src="amberelixir179.jpeg" alt="">
+             <h3> Amber Elixir </h3>
+             <h4> Prix : 179dh </h4>
+             <a href="http://wa.me/212652995806" target="_blank" rel="noopener noreferrer"> <button class="bn">
+                <span class="btn"><i data-lucide="handbag"></i></span> 
+               </button></a>
+         </div>
+         <div class="article">
+            <img src="amberelixirpink.jpeg" alt="">
+             <h3> Amber Elixir Pink Perfume </h3>
+             <h4> Prix : 149dh </h4>
+             <a href="http://wa.me/212652995806" target="_blank" rel="noopener noreferrer"> <button class="bn">
+                <span class="btn"><i data-lucide="handbag"></i></span> 
+               </button></a>
+         </div>
+         <div class="article">
+            <img src="analmalika150.jpeg" alt="">
+             <h3> Ana LMalika  </h3>
+             <h4> Prix : 150dh  </h4>
+             <a href="http://wa.me/212652995806" target="_blank" rel="noopener noreferrer"> <button class="bn">
+                <span class="btn"><i data-lucide="handbag"></i></span> 
+               </button></a>
+         </div>
+         <div class="article">
+            <img src="angham230.jpeg" alt="">
+             <h3> Angham Perfume </h3>
+             <h4> Prix : 230dh </h4>
+             <a href="http://wa.me/212652995806" target="_blank" rel="noopener noreferrer"> <button class="bn">
+                <span class="btn"><i data-lucide="handbag"></i></span> 
+               </button></a>
+         </div>
+        
+         <div class="article">
+            <img src="attraction150.jpeg" alt="">
+             <h3> Attraction Women Perfume </h3>
+             <h4> Prix : 150dh </h4>
+             <a href="http://wa.me/212652995806" target="_blank" rel="noopener noreferrer"> <button class="bn">
+                <span class="btn"><i data-lucide="handbag"></i></span> 
+               </button></a>
+         </div>
+         <div class="article">
+            <img src="badieloud220.jpeg" alt="">
+             <h3> Badee Al Oud </h3>
+             <h4> Prix : 220dh </h4>
+             <a href="http://wa.me/212652995806" target="_blank" rel="noopener noreferrer"> <button class="bn">
+                <span class="btn"><i data-lucide="handbag"></i></span> 
+               </button></a>
+         </div>
+         <div class="article">
+            <img src="celebre120.jpeg" alt="">
+             <h3> Celebre Women Perfume </h3>
+             <h4> Prix : 120dh </h4>
+             <a href="http://wa.me/212652995806" target="_blank" rel="noopener noreferrer"> <button class="bn">
+                <span class="btn"><i data-lucide="handbag"></i></span> 
+               </button></a>
+         </div>
+        
+         <div class="article">
+            <img src="chants15.jpeg" alt="">
+             <h3> Chants Women Perfume </h3>
+             <h4> Prix : 15dh </h4>
+             <a href="http://wa.me/212652995806" target="_blank" rel="noopener noreferrer"> <button class="bn">
+                <span class="btn"><i data-lucide="handbag"></i></span> 
+               </button></a>
+         </div>
+         <div class="article">
+            <img src="cherish.jpg" alt="">
+             <h3> Cherish Women Perfume </h3>
+             <h4> Prix : 150dh </h4>
+             <a href="http://wa.me/212652995806" target="_blank" rel="noopener noreferrer"> <button class="bn">
+                <span class="btn"><i data-lucide="handbag"></i></span> 
+               </button></a>
+         </div>
+         <div class="article">
+            <img src="eclatfemme169.jpeg" alt="">
+             <h3> Eclat Femme Women Perfume </h3>
+             <h4> Prix : 169dh </h4>
+             <a href="http://wa.me/212652995806" target="_blank" rel="noopener noreferrer"> <button class="bn">
+                <span class="btn"><i data-lucide="handbag"></i></span> 
+               </button></a>   
+         </div>
+         <div class="article">
+            <img src="eclatFemmeweekendrivera169.jpeg" alt="">
+             <h3> Eclat Femme Weekend Rivera Women Perfume </h3>
+             <h4> Prix : 150dh </h4>
+             <a href="http://wa.me/212652995806" target="_blank" rel="noopener noreferrer"> <button class="bn">
+                <span class="btn"><i data-lucide="handbag"></i></span> 
+               </button></a>
+         </div>
+         <div class="article">
+            <img src="essenzasupreme230.jpeg" alt="">
+             <h3> Essenza Supreme Women Perfume </h3>
+             <h4> Prix : 230dh </h4>
+             <a href="http://wa.me/212652995806" target="_blank" rel="noopener noreferrer"> <button class="bn">
+                <span class="btn"><i data-lucide="handbag"></i></span> 
+               </button></a>
+         </div>
+         <div class="article">
+            <img src="fakhrlattafaperfumegold199.jpeg" alt="">
+             <h3> Fakhr Lattafa Gold Women Perfume </h3>
+             <h4> Prix : 199dh </h4>
+             <a href="http://wa.me/212652995806" target="_blank" rel="noopener noreferrer"> <button class="bn">
+                <span class="btn"><i data-lucide="handbag"></i></span> 
+               </button></a>
+         </div>
+         <div class="article">
+            <img src="fakhrlttafasilver199.jpeg" alt="">
+             <h3> Fakhr Lattafa Silver Women Perfume </h3>
+             <h4> Prix : 199dh </h4>
+             <a href="http://wa.me/212652995806" target="_blank" rel="noopener noreferrer"> <button class="bn">
+                <span class="btn"><i data-lucide="handbag"></i></span> 
+               </button></a>
+         </div>
+         <div class="article">
+            <img src="yaraorange.jpg" alt="">
+             <h3> Yara Tous Orange  Women Perfume </h3>
+             <h4> Prix : 220dh </h4>
+             <a href="http://wa.me/212652995806" target="_blank" rel="noopener noreferrer"> <button class="bn">
+                <span class="btn"><i data-lucide="handbag"></i></span> 
+               </button></a>
+         </div>
+         <div class="article">
+            <img src="giordannigoldwoman169.jpeg" alt="">
+             <h3> Giordanni Gold Women Perfume </h3>
+             <h4> Prix : 169dh </h4>
+             <a href="http://wa.me/212652995806" target="_blank" rel="noopener noreferrer"> <button class="bn">
+                <span class="btn"><i data-lucide="handbag"></i></span> 
+               </button></a>
+         </div>
+         <div class="article">
+            <img src="incandessence140.jpeg" alt="">
+             <h3> Incandessence Women Perfume </h3>
+             <h4> Prix : 140dh </h4>
+             <a href="http://wa.me/212652995806" target="_blank" rel="noopener noreferrer"> <button class="bn">
+                <span class="btn"><i data-lucide="handbag"></i></span> 
+               </button></a>
+         </div>
+         <div class="article">
+            <img src="infinita140.jpeg" alt="">
+             <h3> Infinita Women Perfume </h3>
+             <h4> Prix : 140dh </h4>
+             <a href="http://wa.me/212652995806" target="_blank" rel="noopener noreferrer"> <button class="bn">
+                <span class="btn"><i data-lucide="handbag"></i></span> 
+               </button></a>
+         </div>
+         <div class="article">
+            <img src="joycewoman79.jpeg" alt="">
+             <h3> Joyce Rose Women Perfume </h3>
+             <h4> Prix : 79dh </h4>
+             <a href="http://wa.me/212652995806" target="_blank" rel="noopener noreferrer"> <button class="bn">
+                <span class="btn"><i data-lucide="handbag"></i></span> 
+               </button></a>
+         </div>
+         <div class="article">
+            <img src="khamralattafa280.jpeg" alt="">
+             <h3> Khamra - Lattafa Women Perfume </h3>
+             <h4> Prix : 280dh </h4>
+             <a href="http://wa.me/212652995806" target="_blank" rel="noopener noreferrer"> <button class="bn">
+                <span class="btn"><i data-lucide="handbag"></i></span> 
+               </button></a>
+         </div>
+         <div class="article">
+            <img src="leonie150.jpeg" alt="">
+             <h3> Leonie - Maison Alhambara Women Perfume </h3>
+             <h4> Prix : 150dh </h4>
+             <a href="http://wa.me/212652995806" target="_blank" rel="noopener noreferrer"> <button class="bn">
+                <span class="btn"><i data-lucide="handbag"></i></span> 
+               </button></a>
+         </div>
+         <div class="article">
+            <img src="littleblackdress140women.jpeg" alt="">
+             <h3> Little Black Dress Women Perfume </h3>
+             <h4> Prix : 140dh </h4>
+             <a href="http://wa.me/212652995806" target="_blank" rel="noopener noreferrer"> <button class="bn">
+                <span class="btn"><i data-lucide="handbag"></i></span> 
+               </button></a>
+         </div>
+         <div class="article">
+            <img src="lovenature29.jpeg" alt="">
+             <h3> Love Nature Women Perfumed Powder </h3>
+             <h4> Prix : 29dh </h4>
+             <a href="http://wa.me/212652995806" target="_blank" rel="noopener noreferrer"> <button class="bn">
+                <span class="btn"><i data-lucide="handbag"></i></span> 
+               </button></a>
+         </div>
+         <div class="article">
+            <img src="lovepotion169.jpeg" alt="">
+             <h3> Love Potion Women Perfume </h3>
+             <h4> Prix : 169dh </h4>
+             <a href="http://wa.me/212652995806" target="_blank" rel="noopener noreferrer"> <button class="bn">
+                <span class="btn"><i data-lucide="handbag"></i></span> 
+               </button></a>
+         </div>
+         <div class="article">
+            <img src="mayar220.jpeg" alt="">
+             <h3> Mayar - Lattafa Women Perfume </h3>
+             <h4> Prix : 220dh </h4>
+         </div>
+         <div class="article">
+            <img src="missgiordaniperfume+deo165.jpeg" alt="">
+             <h3> Miss Giordanni Women Perfume + Miss Giordanni Deodorant </h3>
+             <h4> Prix : 165dh </h4>
+             <a href="http://wa.me/212652995806" target="_blank" rel="noopener noreferrer"> <button class="bn">
+                <span class="btn"><i data-lucide="handbag"></i></span> 
+               </button></a>
+         </div>
+         <div class="article">
+            <img src="montaignecoco160.jpeg" alt="">
+             <h3> Montaigne CoCo - Maison Alhambara Women Perfume </h3>
+             <h4> Prix : 160dh </h4>
+             <a href="http://wa.me/212652995806" target="_blank" rel="noopener noreferrer"> <button class="bn">
+                <span class="btn"><i data-lucide="handbag"></i></span> 
+               </button></a>
+         </div>
+         <div class="article">
+            <img src="mousuf150.jpeg" alt="">
+             <h3> Mousuf Women Perfume </h3>
+             <h4> Prix : 150dh </h4>
+             <a href="http://wa.me/212652995806" target="_blank" rel="noopener noreferrer"> <button class="bn">
+                <span class="btn"><i data-lucide="handbag"></i></span> 
+               </button></a>
+         </div>
+         <div class="article">
+            <img src="ohsweet120.jpeg" alt="">
+             <h3> Oh Sweet!  Women Perfume </h3>
+             <h4> Prix : 120dh </h4>
+             <a href="http://wa.me/212652995806" target="_blank" rel="noopener noreferrer"> <button class="bn">
+                <span class="btn"><i data-lucide="handbag"></i></span> 
+               </button></a>
+         </div>
+         <div class="article">
+            <img src="oudmood150.jpeg" alt="">
+             <h3> Oud Mood  Women Perfume </h3>
+             <h4> Prix : 150dh </h4>
+             <a href="http://wa.me/212652995806" target="_blank" rel="noopener noreferrer"> <button class="bn">
+                <span class="btn"><i data-lucide="handbag"></i></span> 
+               </button></a>
+         </div>
+         <div class="article">
+            <img src="philosrosso160.jpeg" alt="">
+             <h3> PhiloRosso Women Perfume </h3>
+             <h4> Prix : 160dh </h4>
+             <a href="http://wa.me/212652995806" target="_blank" rel="noopener noreferrer"> <button class="bn">
+                <span class="btn"><i data-lucide="handbag"></i></span> 
+               </button></a>
+         </div>
+         <div class="article">
+            <img src="pinkamberelixir149.jpeg" alt="">
+             <h3> Pink Amber Elixir Women Perfume </h3>
+             <h4> Prix : 149dh </h4>
+         </div>
+         <div class="article">
+            <img src="pinkshimmersecretperfume160.jpeg" alt="">
+             <h3> Pink Shimmer Secret Women Perfume </h3>
+             <h4> Prix : 160dh </h4>
+             <a href="http://wa.me/212652995806" target="_blank" rel="noopener noreferrer"> <button class="bn">
+                <span class="btn"><i data-lucide="handbag"></i></span> 
+               </button></a>
+         </div>
+         <div class="article">
+            <img src="raregold139women.jpeg" alt="">
+             <h3> Rare Gold Women Perfume </h3>
+             <h4> Prix : 139dh </h4>
+             <a href="http://wa.me/212652995806" target="_blank" rel="noopener noreferrer"> <button class="bn">
+                <span class="btn"><i data-lucide="handbag"></i></span> 
+               </button></a>
+         </div>
+         <div class="article">
+            <img src="rarepearls139.jpeg" alt="">
+             <h3> Rare Pearls Women Perfume </h3>
+             <h4> Prix : 139dh </h4>
+             <a href="http://wa.me/212652995806" target="_blank" rel="noopener noreferrer"> <button class="bn">
+                <span class="btn"><i data-lucide="handbag"></i></span> 
+               </button></a>
+         </div>
+         <div class="article">
+            <img src="shafaq160women.jpeg" alt="">
+             <h3> Shafaq Women Perfume </h3>
+             <h4> Prix : 160dh </h4>
+             <a href="http://wa.me/212652995806" target="_blank" rel="noopener noreferrer"> <button class="bn">
+                <span class="btn"><i data-lucide="handbag"></i></span> 
+               </button></a>
+         </div>
+         <div class="article">
+            <img src="soCandid180.jpeg" alt="">
+             <h3> So Candid - Maison Alhambara Women Perfume </h3>
+             <h4> Prix : 180dh </h4>
+             <a href="http://wa.me/212652995806" target="_blank" rel="noopener noreferrer"> <button class="bn">
+                <span class="btn"><i data-lucide="handbag"></i></span> 
+               </button></a>
+         </div>
+         <div class="article">
+            <img src="todaytomorrowalwaysfemme150.jpeg" alt="">
+             <h3> Today tomorrow always Women Perfume </h3>
+             <h4> Prix : 150dh </h4>
+             <a href="http://wa.me/212652995806" target="_blank" rel="noopener noreferrer"> <button class="bn">
+                <span class="btn"><i data-lucide="handbag"></i></span> 
+               </button></a>
+         </div>
+         <div class="article">
+            <img src="todayTOMORROWalwaysorange150.jpeg" alt="">
+             <h3> today TOMORROW always Women Perfume </h3>
+             <h4> Prix : 150dh </h4>
+             <a href="http://wa.me/212652995806" target="_blank" rel="noopener noreferrer"> <button class="bn">
+                <span class="btn"><i data-lucide="handbag"></i></span> 
+               </button></a>
+         </div>
+         <div class="article">
+            <img src="yarapink220.jpeg" alt="">
+             <h3> Yara Pink Women Perfume </h3>
+             <h4> Prix : 220dh </h4>
+             <a href="http://wa.me/212652995806" target="_blank" rel="noopener noreferrer"> <button class="bn">
+                <span class="btn"><i data-lucide="handbag"></i></span> 
+               </button></a>
+         </div>
+         <div class="article">
+            <img src="yrr.jpg" alt="">
+             <h3> Yara You white Women Perfume </h3>
+             <h4> Prix : 220dh </h4>
+             <a href="http://wa.me/212652995806" target="_blank" rel="noopener noreferrer"> <button class="bn">
+                <span class="btn"><i data-lucide="handbag"></i></span> 
+               </button></a>
+         </div>
+    </div>
+       <div id="bottom" style="background: #fdf1f2;">  <h3 style="font-family: 'parisienne'; margin-left: 50px;" >  Men Perfumes: </h3> </div>
+     <div class="atricles" style=" margin-top: 5px;
+     grid-template-columns: repeat( 2, 1fr);
+     display: grid;
+     background: #fdf1f2;
+     gap: 10px;"
+      data-gender="men"> 
+        <div class="article" style="   height: 300px;
+     width: 180px;
+     font-family: 'Montserrat';
+     font-weight: 1000;
+     margin-left: 5px; 
+     border-radius: 10px;
+     margin-top: 10px;
+     position: relative;">
+            <img style=" height: 170px;
+     width: 150px;" src="asadblack199.jpeg" alt="">
+             <h3> Asad Original Black men Perfume </h3>
+             <h4> Prix : 199dh </h4>
+             <a href="http://wa.me/212652995806" target="_blank" rel="noopener noreferrer"> <button class="bn">
+                <span class="btn"><i data-lucide="handbag"></i></span> 
+               </button></a>
+         </div>
+         <div class="article">
+            <img src="asadzanzibarblue199.jpeg" alt="">
+             <h3> Asad Zanzibar blue men Perfume </h3>
+             <h4> Prix : 199dh </h4>
+             <a href="http://wa.me/212652995806" target="_blank" rel="noopener noreferrer"> <button class="bn">
+                <span class="btn"><i data-lucide="handbag"></i></span> 
+               </button></a>
+         </div>
+         <div class="article">
+            <img src="signatureMan159.jpeg" alt="">
+             <h3> Signature Man  men Perfume </h3>
+             <h4> Prix : 159dh </h4>
+             <a href="http://wa.me/212652995806" target="_blank" rel="noopener noreferrer"> <button class="bn">
+                <span class="btn"><i data-lucide="handbag"></i></span> 
+               </button></a>
+         </div>
+         <div class="article">
+            <img src="essenzamenelixir239.jpeg" alt="">
+             <h3> Essenza Men Elixir men Perfume </h3>
+             <h4> Prix : 239dh </h4>
+             <a href="http://wa.me/212652995806" target="_blank" rel="noopener noreferrer"> <button class="bn">
+                <span class="btn"><i data-lucide="handbag"></i></span> 
+               </button></a>
+         </div>
+
+
+
+
+
+
+
+
+
+
+     </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script> lucide.createIcons(); </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new
+     Swiper(".hero-slider" , {
+       
+       loop:true,
+   
+       autoplay: {
+          delay:5000,
+          disableOnInteraction:false
+       },
+       pagination:{
+          el:".swiper-pagination",
+          clickable:true
+       }
+       
+   } );
+   </script>
+   <script>
+   function filterGender(gender) {
+    const articles = document.querySelectorAll('.article');
+  
+    articles.forEach(article => {
+      const articleGender = article.getAttribute('data-gender');
+  
+      if (gender === 'all' || articleGender === gender) {
+        article.style.display = 'block';
+      } else {
+        article.style.display = 'none';
+      }
+    });
+  }
+</script>

@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Marrakech Parfums Bab Rizk</title>
+
+<link href="https://fonts.googleapis.com/css?family=Playfair Display|Montserrat|Parisienne|Italianno" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"/>
+<link
+  rel="stylesheet"
+  href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+  crossorigin="anonymous"
+/> 
+<link rel="stylesheet" href="http://www.w3.org/2000/svg">
+   
+<style>
+ *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+    body{
+        margin: 0px;
+    }
+  .hero{
+      width: 100%;
+      height: 500px;
+      position: relative;
+    overflow: hidden;
+}
+.rollers h3{
+    font-size: 15px;
+}
+.roller h2{
+    font-size: 15px;
+}
+.btn{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgb(0, 0, 0);
+  
+  width: 40px;  
+  height: 40px;  
+  border-radius: 50%;
+  padding: 5px;
+}
+.bn{
+    color: transparent;
+    border: transparent;
+    outline: transparent;
+}
+.swiper-button-next{
+    color: #fdf1f2;
+}
+.swiper-button-prev{
+    color: #fdf1f2;
+}
+.swiper-pagination-bullet{
+  width: 40px;
+  height: 4px;
+  border-radius: 2px;
+background: #ffffff80;
+margin: 0 6px !important;
+transition: all 0.4s ease;
+}
+.swiper-pagination-bullet-active{
+    height: 6px;
+    background: antiquewhite;
+}
+.swiper-slide img{
+    height: 500px;
+    align-items: cover;
+    position: cover;
+    overflow: hidden;
+    object-fit:cover;
+   
+}
+.roller{
+    
+    margin-top: 5px;
+    overflow-y:auto;
+    scroll-snap-type:y mandatory;
+    display: flex;
+    background: #fdf1f2;
+    gap: 10px;
+    
+}
+.product{
+    height: 300px;
+    width: 180px;
+    font-family: "Montserrat";
+    font-weight: 1000;
+    margin-left: 5px; 
+    border-radius: 10px;
+    margin-top: 10px;
+    position: relative;
+}
+.product img{
+    height: 170px;
+    width: 150px;
+  
+    
+}
+.hero video{ 
+    position: absolute;
+    
+    
+    min-height: 40%;
+    min-width: 40%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    object-fit: cover;
+}
+#nav{
+      background-color: #2d2d2d;
+      margin: 0px;
+      width:100%;
+     
+  }
+  #nav h3{
+     font-family: "parisienne";
+     color: #e6cfa3;
+     font-size: 20px;
+     font-style: italic;
+     font-weight: 450;
+     margin-left: 10px;
+     padding-top: 10px;
+  }
+  #navbar{
+    background-color: #2d2d2d ;
+  
+  }
+  .navbar-nav a{
+      color: #e6cfa3;
+      font-family: "parisienne";
+  }
+  .navbar-toggler-icon{
+      color: #e6cfa3 ;
+     
+}
+.navbar-toggler{
+     margin: 0px;
+     padding: 0px;
+     
+}  
+svg{
+    stroke-width: 1.2;
+    width: 20px;
+    color: #e6cfa3;
+}
+.y{
+    color: white;
+  
+   position: absolute;
+   top: 40%;
+   left: 50%;
+   transform: translate(-50%, -30%);
+   opacity: 0;
+   transition: opacity 1.5s ease, transform 1.5s ease;
+   z-index: 200;
+   font-family: "Montserrat";
+}
+.swiper-pagination-bullet{
+  width: 40px;
+  height: 4px;
+  border-radius: 2px;
+background: #ffffff80;
+margin: 0 6px !important;
+transition: all 0.4s ease;
+}
+.swiper-pagination-bullet-active{
+    height: 6px;
+    background: antiquewhite;
+}
+.swiper-slide-active .y {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+    transition: opacity 1.5s ease, transform 1.5s ease;
+    transition-delay: 0.3s;
+   
+}
+.lol{
+    width:100%;
+    height:500px;
+    object-fit:cover;
+    animation: zoomOut 5s linear;
+}
+
+@keyframes zoomOut{
+  0%{
+    transform: scale(1.15);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+.R{
+    padding-left: 40px;
+    font-family: "Montserrat";
+}
+.joinOurCommunity{
+    height: 700px;
+    width: 100%;
+    background: url("logo.jpeg");
+    object-fit: cover;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+.joinOurCommunity h2{
+   padding-top: 80px;
+}
+</style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg " id="nav">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+            <a class="navbar-toggler-icon"> <i data-lucide="menu"></i> </a>
+        </button>
+          <h3> Marrakech Parfums </h3>
+         
+            
+           
+            
+                  
+         <a href="cart.html"  style=" color: #2d2d2d;  "> <i data-lucide="store"></i></a>
+         
+        <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" id="Home" style="color: #e6cfa3; text-decoration: #e6cfa3 underline;" href="index.html">Home / الصفحة الرئيسية  </a></li>
+                <li class="nav-item"><a class="nav-link" id="jewelery" href="perfumes.html"> Perfumes / العطور </a></li>
+                <li class="nav-item"><a class="nav-link" id="jewelery" href="deo.html"> Deodorants / مزيلات العرق </a></li>
+                <li class="nav-item"><a class="nav-link" id="jewelery" href="Air.html"> AirFresheners / معطرات الجو </a></li>
+                <li class="nav-item"><a class="nav-link" id="jewelery" href="musk.html"> Musks / الامساك </a></li>
+
+           </ul>
+        </div>
+    </nav>
+      
+        <div class="productDisplayer">
+       
+         <div class="swiper products-slider"  style="position: relative; z-index: 100;" >
+            <div class="swiper-wrapper">
+            <div class="swiper-slide" style="position: relative; ">
+                    <img class="lol" src="woman.jpeg" alt="">
+                    <h2 class="y" >
+                     Discover Our Latest Collection of Women Perfume </h2>
+                
+                </div>
+                <div class="swiper-slide" style="position: relative;">
+                    <img class="lol" src="man.jpeg" alt="">
+                    <h2 class="y" > اكتشفوا مجموعتنا الجديدة و المتنوعة من العطور الرجالية
+                     </h2>
+                
+                </div></div>
+                <div class="swiper-button-next" ></div>
+                <div class="swiper-button-prev" ></div>
+         </div>
+         </div>
+      <div class="gallery">
+          <h2 class="R"> Our BestSellers!  </h2>
+        <div class="roller">
+            
+            <div class="product">
+                
+                <img src="littleblackdress140women.jpeg" alt="this is a product pic">
+             <h3 style="font-size: 20px;">Little Black Dress Perfume </h3>
+             <h2> Prix : 140dh</h2>
+             <a href="http://wa.me/212652995806" target="_blank" rel="noopener noreferrer"> <button class="bn">
+                <span class="btn"><i data-lucide="handbag"></i></span> 
+               </button></a>
+            </div> 
+            <div class="product">
+                
+                <img src="angham230.jpeg" alt="this is a product pic">
+                <h3 style="font-size: 20px;"> Angham - Lattafa</h3>
+                <h2> Prix : 230dh</h2>
+                <a href="http://wa.me/212652995806" target="_blank" rel="noopener noreferrer"> <button class="bn">
+                    <span class="btn"><i data-lucide="handbag"></i></span> 
+                   </button></a>
+             </div>
+             <div class="product"> 
+                 
+                 <img src="caresun89.jpeg" alt="this is a product pic">
+                <h3 style="font-size: 20px;"> Sun Screen - Avon </h3>
+                <h2> Prix : 89dh</h2>
+                <a href="http://wa.me/212652995806" target="_blank" rel="noopener noreferrer"> <button class="bn">
+                    <span class="btn"><i data-lucide="handbag"></i></span> 
+                   </button></a>
+            </div>
+           
+             <div class="product"> 
+               
+                <img src="celebre120.jpeg" alt="this is a product pic">
+                <h3 style="font-size: 20px;">Celebre Perfume</h3>
+                <h2> Prix : 120dh</h2> 
+                <a href="http://wa.me/212652995806" target="_blank" rel="noopener noreferrer"> <button class="bn">
+                    <span class="btn"><i data-lucide="handbag"></i></span> 
+                   </button></a>
+
+              
+             </div>
+             <div class="product"> 
+               
+               <img src="leonie150.jpeg" alt="this is a product pic">
+               <h3 style="font-size: 20px;"> Leonie Perfume Maison Alhambara </h3>
+               <h2> Prix : 150dh </h2>
+              <a href="http://wa.me/212652995806" target="_blank" rel="noopener noreferrer"> <button class="bn">
+                <span class="btn"><i data-lucide="handbag"></i></span> 
+               </button></a> </div>
+
+        
+        </div>
+
+
+      </div>
+      </div>
+
+      <div class="swiper hero-slider">
+            <H2 class="R"> Shop From Our Categories </H2>
+          <div class="swiper-wrapper">
+             <div class="swiper-slide">
+          <img src="cvrr.jpeg" alt="" style="object-fit: cover;">
+              <h2 class="y"> Shop From Our Latest Deodorant Collection </h2>
+         </div>
+         <div class="swiper-slide">
+            <img src="cvr (1).jpeg" alt="" style="object-fit: cover;">
+                <h2 class="y"> Shop From Our Latest Air Fresheners Collection </h2>
+           </div>
+           <div class="swiper-slide">
+            <img src="cvr (2).jpeg" alt="" style="object-fit: cover;">
+                <h2 class="y"> Shop From Our Latest Musks Collection </h2>
+           </div>
+           <div class="swiper-slide">
+            <img src="uu.jpeg" alt="" style="object-fit: cover; width: 100%;">
+                <h2 class="y"> Shop From Our Latest Arab Perfumes Collection </h2>
+           </div>
+           <div class="swiper-slide">
+            <img src="cvr.jpeg" alt="" style="object-fit: cover; width: 100%;">
+                <h2 class="y"> Shop From Our Latest Oriflame Perfumes Collection </h2>
+           </div>
+             
+            </div>
+            <div class="swiper-pagination"> </div>
+            <div></div>
+      </div>
+     
+        <div class="joinOurCommunity">
+          <h2>  Join Our Community By Visiting <br> Our Tiktok Page : @malika.ouabou </h2>
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+<script src="https://unpkg.com/lucide@latest"></script>
+<script> lucide.createIcons(); </script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+     const swiper = new
+     Swiper(".products-slider", {
+      loop:true,
+      autoplay:{
+      delay:5000,
+      disableOnInteraction:false
+      },
+      navigation:{
+        nextEl:".swiper-button-next",
+        prevEl:".swiper-button-next",
+        clickable:true
+      }
+
+
+
+
+    } );
+</script>
+<script>
+     const swiper1 = new
+  Swiper(".hero-slider" , {
+    
+    loop:true,
+
+    autoplay: {
+       delay:5000,
+       disableOnInteraction:false
+    },
+    pagination:{
+       el:".swiper-pagination",
+       clickable:true
+    }
+    
+} );
+</script>
+
+</body>
+
+</html>
